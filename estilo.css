@@ -1,0 +1,60 @@
+@font-face{
+	font-family: "handwriting";
+
+	src: url('journal.eot');
+	src: url('journal.eot?') format('eot'),
+		 url('journal.woff') format('woff'),
+		 url('journal.ttf')	format('truetype');
+}
+
+body{
+	font: 21px sans-serif;
+
+	padding: 2em;
+	margin: 0;
+
+	background: #222;
+}
+
+form {
+	position: relative;
+	left: 415px;
+	top: 185px;
+
+
+}
+
+input{
+	font: .9em/1.5em "handwriting", sans-serif;
+
+	border: none;
+	padding: 0 10px;
+	margin: 0;
+	width: 240px
+
+}
+
+button{
+	position: absolute;
+	left: 440px;
+	top: 360px;
+
+	padding: 5px;
+
+	border: 2px solid #333;
+	border-radius: 5px;
+	background: none;
+
+	cursor: pointer;
+
+	-webkit-transform: rotate(-1.5deg);
+	   -moz-transform: rotate(-1.5deg);
+	    -ms-transform: rotate(-1.5deg);
+	     -o-transform: rotate(-1.5deg); 
+	        transform: rotate(-1.5deg);
+}
+#from{
+	position: center;
+	left: 390px;
+	top: 285px;
+}

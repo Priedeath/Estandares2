@@ -16,9 +16,9 @@ $sitiologin = new sitiologin();
 	session_start();
 	$_SESSION['usuario'] = null;
 	unset($_SESSION['usuario']);
-$intento= $_POST['intento'];
 
-
+	//codigo para recibir mensajes de valindando.php.
+$mensaje = $_GET['mensaje'];
 
 ?>
 
@@ -36,7 +36,7 @@ $intento= $_POST['intento'];
 <body>
 	<center>
 	<div id="fg_membersite" name="from">		
-		<form id="login" action='validando.php' method="POST" accetp-charset='UTF-8'>
+		<form id="login" action="validando.php" method="POST" accetp-charset='UTF-8'>
 			<fieldset>
 				<legend>Iniciar Sesion</legend>
 
@@ -52,15 +52,16 @@ $intento= $_POST['intento'];
 					<input type="password" placeholder="Contraseña*" name="txtpassword"/>
 					<span id="login_password_errorloc" class="error"></span>
 				</div>
+				<div class="container">
+
+					<span style="color:red"><?php echo $mensaje; ?></span>
+				</div>
 
 				<div class='container'>
 				<input type="submit" value="Ingresar" name="Ingresar"/>
 				</div>
 
-				<div class="container">
-
-					<span name="error"><?php $mensaje ?></span>
-				</div>
+				
 				<!-- <div class='short_explanation'><a href="resetear-pwd.php">Olvido su contraseña?</a></div> -->
 			</fieldset>		
 		</form>

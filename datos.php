@@ -33,7 +33,9 @@ class datos{
 
 			print '<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#agregarusuario">Agregar Usuario</button>';
 
-			print '<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#eliminar">Eliminar Usuario</button>
+			print '<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#eliminar">Eliminar Usuario</button>';
+
+			print '<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#enviarmail">Enviar Correo</button>
 		</div>';
 		print '';
 		}
@@ -42,7 +44,8 @@ class datos{
 			print '<div class="container">
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#datos">Cambiar datos</button>
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cambiarpwd">Cambiar Contraseña</button>
-		</div>';
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#enviarmail">Enviar Correo</button></div>';
+
 		}
 
 		# code...	

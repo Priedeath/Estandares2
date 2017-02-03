@@ -68,7 +68,7 @@ $usuario = $_SESSION['usuario'];
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data=dismiss="modal">&times;</button>
-						<h4 class="modal-title">Cambiar datos</h4>
+						<h4 class="modal-title">Eliminar Usuario</h4>
 					</div>
 
 					<div class="modal-body">
@@ -151,7 +151,7 @@ $usuario = $_SESSION['usuario'];
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data=dismiss="modal">&times;</button>
-						<h4 class="modal-title">Cambiar datos</h4>
+						<h4 class="modal-title">Cambiar Contraseña</h4>
 					</div>
 
 					<div class="modal-body">
@@ -174,13 +174,52 @@ $usuario = $_SESSION['usuario'];
 				</div>
 			</div>
 		</div>
+
+
+		<div class="modal fade" role="dialog" id="enviarmail" style="display:none; cursos: default">
+			
+			<div clas="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data=dismiss="modal">&times;</button>
+						<h4 class="modal-title">Enviar Correo</h4>
+					</div>
+
+					<div class="modal-body">
+						<form id="enviarmail" action="mail.php" method="POST">													
+
+							<div class="container">
+								<input type="text" placeholder="Titulo*" name="txttitulo"  maxlength="50"/>
+							</div>
+
+							<div class="container">
+								<input type="text" placeholder="Mensaje*" name="txtmail"  maxlength="150"/>
+							</div>
+
+							<div class="container">
+								<input type="text" placeholder="Correo*" name="txtcorreo"  maxlength="50"/>
+							</div>
+
+							<div class="container">
+								<input type="submit" value="Enviar" id="actualizar"/>
+							</div>
+						</form>
+
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="modal fade" role="dialog" id="tablausuarios" style="display:none; cursos: default">
 			
 			<div clas="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data=dismiss="modal">&times;</button>
-						<h4 class="modal-title">Cambiar datos</h4>
+						<h4 class="modal-title">Usuarios</h4>
 					</div>
 
 					<div class="modal-body">
@@ -201,7 +240,7 @@ $usuario = $_SESSION['usuario'];
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data=dismiss="modal">&times;</button>
-						<h4 class="modal-title">Cambiar datos</h4>
+						<h4 class="modal-title">Agregar Usuario</h4>
 					</div>
 
 					<div class="modal-body">
